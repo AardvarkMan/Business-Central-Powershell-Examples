@@ -181,7 +181,7 @@ foreach ($id in $sorted) {
         }
         else {
             Write-Host "Skipping $($Installed.Name). Installed version ($($Installed.version)) is newer or equal."
-            break
+            continue
         }
     }
 
